@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manmohini Saris</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Open Sans', sans-serif; color: #333; line-height: 1.6; background: #fafafa; }
+    a { text-decoration: none; color: inherit; }
+    .container { width: 90%; max-width: 1200px; margin: 0 auto; }
+
+    /* Hero Section */
+    .hero {
+      background: url('assets/hero-bg.png') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      padding: 0 20px;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+    .hero-content { position: relative; z-index: 2; }
+    .hero img.logo { max-width: 180px; margin-bottom: 20px; }
+    .hero h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 10px; color: #6B3E26; }
+    .hero p  { font-size: 1.2rem; margin-bottom: 20px; }
+    .btn { background-color: #6B3E26; color: #fff; padding: 12px 30px; border: none; border-radius: 25px; font-weight: 600; transition: background 0.3s; }
+    .btn:hover { background-color: #51301F; }
+
+    /* Decorative Divider */
+    .divider {
+      background: url('assets/divider-bg.jpg') center/cover no-repeat;
+      height: 100px;
+    }
+
+    /* Info Section */
+    .info {
+      padding: 80px 0;
+      background: url('assets/info-bg.jpg') center/cover no-repeat;
+      position: relative;
+    }
+    .info::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(255,255,255,0.8);
+    }
+    .info .container { position: relative; z-index: 2; text-align: center; }
+    .info h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #6B3E26; margin-bottom: 20px; }
+    .info p  { font-size: 1rem; max-width: 700px; margin: 0 auto; color: #555; }
+
+    /* Newsletter Section */
+    .newsletter {
+      padding: 60px 0;
+      text-align: center;
+      background: url('assets/newsletter-bg.jpg') center/cover no-repeat;
+      position: relative;
+    }
+    .newsletter::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(250,250,250,0.85);
+    }
+    .newsletter .container { position: relative; z-index: 2; }
+    .newsletter h2 { font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 10px; color: #6B3E26; }
+    .newsletter p  { font-size: 1rem; margin-bottom: 20px; color: #555; }
+    .newsletter form { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
+    .newsletter input[type="email"] { padding: 12px; width: 300px; border: 1px solid #ccc; border-radius: 25px; outline: none; }
+    .newsletter input[type="submit"] { padding: 12px 25px; border-radius: 25px; border: none; background-color: #6B3E26; color: #fff; font-weight: 600; cursor: pointer; transition: background 0.3s; }
+    .newsletter input[type="submit"]:hover { background-color: #51301F; }
+
+    /* Footer */
+    footer { background: #f9f9f9; padding: 20px 0; text-align: center; font-size: 0.9rem; color: #777; }
+    footer a { margin: 0 10px; }
+
+    @media (max-width: 768px) { .hero h1 { font-size: 2.5rem; } .hero p { font-size: 1rem; } }
+  </style>
+</head>
+<body>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content container">
+      <img src="logo.png" alt="Manmohini Logo" class="logo">
+      <h1>Elegance Redefined</h1>
+      <p>Handpicked saris for the modern woman.</p>
+      <a href="#info" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Decorative Divider -->
+  <div class="divider"></div>
+
+  <!-- Info Section -->
+  <section id="info" class="info">
+    <div class="container">
+      <h2>Crafted with Love & Tradition</h2>
+      <p>Each Manmohini sari is a masterpiece, woven by skilled artisans using age-old techniques. From the vibrant silks of Varanasi to the delicate cottons of Bengal, our collection celebrates India's rich textile heritage.</p>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section id="newsletter" class="newsletter">
+    <div class="container">
+      <h2>Join Our Inner Circle</h2>
+      <p>Subscribe for early access to our launch, exclusive offers & more.</p>
+      <form action="#" method="POST">
+        <input type="email" name="email" placeholder="Your email address" required>
+        <input type="submit" value="Notify Me">
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Manmohini. All rights reserved.</p>
+    <div>
+      <a href="#">Instagram</a>|
+      <a href="#">Facebook</a>|
+      <a href="#">Pinterest</a>
+    </div>
+  </footer>
+</body>
+</html>
